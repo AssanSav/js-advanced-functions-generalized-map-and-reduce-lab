@@ -14,7 +14,7 @@ function reduce(sourceArray, funct, staringPoint =0) {
         total = sourceArray[0]
         sourceArray.shift()
     }
-    sourceArray.map(elem => {
+    sourceArray.forEach(elem => {
         total = funct(elem, total)
     })
     return total
